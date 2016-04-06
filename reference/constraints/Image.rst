@@ -24,6 +24,7 @@ of the documentation on this constraint.
 |                | - `allowSquare`_                                                      |
 |                | - `allowLandscape`_                                                   |
 |                | - `allowPortrait`_                                                    |
+|                | - `detectCorrupted`_                                                  |
 |                | - `mimeTypesMessage`_                                                 |
 |                | - `sizeNotDetectedMessage`_                                           |
 |                | - `maxWidthMessage`_                                                  |
@@ -310,6 +311,13 @@ allowPortrait
 **type**: ``Boolean`` **default**: ``true``
 
 If this option is false, the image cannot be portrait oriented.
+
+detectCorrupted
+~~~~~~~~~~~~~
+
+**type**: ``Boolean`` **default**: ``false``
+
+If this option is true, image will be checked with `imagecreatefromstring()`` GD function.
 
 sizeNotDetectedMessage
 ~~~~~~~~~~~~~~~~~~~~~~
